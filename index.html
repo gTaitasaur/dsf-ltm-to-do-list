@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link href='./assets/css/style.css' rel='stylesheet'>
+</head>
+<body>
+  <h1>To do List</h1>
+  <hr>
+  <div class="inputspace">
+    <h4>Nueva tarea:</h4>
+    <input id="nuevaTarea" type="text">
+    <input type="button" id="agregarTarea" value="Agregar">
+  </div>
+  <div class="underinput">
+    <div class="showtasks">
+      <p>Total: <b id="tareaTotal">0</b></p>
+      <p>Realizadas: <b id="tareaRealizada">0</b></p>
+    </div>
+    <div class="tabla">
+      <div>
+        <h5>ID</h5>
+        <ul id="tareaId">
+          <!-- insert con id de la tarea -->
+        </ul>
+      </div>
+      <div>
+        <h5>Descripción</h5>
+        <ul id="tareaDescrip">
+          <!-- insert con la descripción de la tarea -->
+        </ul>
+      </div>
+      <div>
+        <h5>Estado</h5>
+        <ul id="tareaStatus">
+          <!-- insert con los botones de estados -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script defer type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>

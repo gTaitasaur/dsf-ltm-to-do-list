@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+}
+
+/* AGREGAR TAREA */
+.underinput {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+input{
+    margin: 5px;
+}
+
+    /* estilo botón */
+#agregarTarea{
+    box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede, -4px -4px white, -4px 0 white, 0 -4px white, 2px 2px #818181, 0 2px #818181, 2px 0 #818181,  2px -2px #e0dede, -2px 2px #818181, -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black, 2px -4px white, 4px -4px black;
+}
+
+#agregarTarea:active{
+    box-shadow: -2px -2px #818181, -2px 0 #818181, 0 -2px #818181, -4px -4px black, -4px 0 black, 0 -4px black, 2px 2px #e0dede, 0 2px #e0dede, 2px 0 #e0dede,  2px -2px #818181, -2px 2px #e0dede, -4px 2px black, -4px 4px white, 4px 4px white, 4px 0 white, 0 4px white, 2px -4px black, 4px -4px white;
+}
+
+/* TABLA CON TAREAS */
+.tabla{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    width: 60%;
+}
+
+#tareaId, #tareaDescrip, #tareaStatus{
+    list-style: none;
+}
+
+#tareaId li, #tareaDescrip li, #tareaStatus li, #status li{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: 1px solid black;
+    height: 30px;
+}
